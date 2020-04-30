@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Transform on Scrolling</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner">
+            <video autoplay="" muted="" loop="">
+                <source src="production ID_4049153.mp4" type="video/mp4">
+            </video>
+            <div id="bg"></div>
+        </div>
+
+        <script type="text/javascript">
+            let big = document.querySelector('#bg');
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                bg.style.backgroundSize = 100 + value*2 +"px";
+            })
+        </script>
+    </body>
+</html>
